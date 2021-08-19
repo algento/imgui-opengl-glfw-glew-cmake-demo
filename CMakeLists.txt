@@ -23,7 +23,7 @@ if (APPLE)
 endif()
 
 # glfw
-find_package(glfw3 CONFIG REQUIRED)
+find_package(glfw3 REQUIRED)
 # include_directories(${GLFW_INCLUDE_DIRS})
 # link_libraries(${GLFW_LIBRARY_DIRS})
 pkg_check_modules(GLFW3 REQUIRED glfw3)
@@ -31,7 +31,7 @@ include_directories(${GLFW3_INCLUDE_DIRS})
 link_libraries(${GLFW3_LIBRARIES}) 
 
 # glew
-find_package(GLEW CONFIG REQUIRED)
+find_package(GLEW REQUIRED)
 # include_directories(${GLEW_INCLUDE_DIRS})
 pkg_check_modules(GLEW REQUIRED glew)
 include_directories(${GLEW_INCLUDE_DIRS})
